@@ -1,0 +1,34 @@
+﻿<Window x:Class="AudioPhysics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AudioPhysics"
+        mc:Ignorable="d"
+        Title="Audio Physics" Height="500" Width="520" MinWidth="520" MinHeight="500" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid Background="#FF171717">
+        <Rectangle Fill="#FF25A581" Height="30" VerticalAlignment="Top"/>
+        <ScrollViewer x:Name="scrollViewer" Margin="0,30,0,68" VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="stackPanel" />
+        </ScrollViewer>
+        <Rectangle Fill="#FF25A581" Height="2" Margin="0,0,0,66" VerticalAlignment="Bottom"/>
+        <Label x:Name="lbl_Generatore" Content="Generatore di onde" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="16" Height="30" Foreground="White" Margin="0,-1,0,0"/>
+        <Slider x:Name="MasterSlider" IsSnapToTickEnabled="True" TickFrequency="1" Style="{StaticResource Horizontal_Slider}" Margin="166,0,128,38" Height="21" VerticalAlignment="Bottom" Maximum="100" Value="100" ValueChanged="MasterSlider_ValueChanged"/>
+        <TextBox x:Name="tb_Amplitude" HorizontalContentAlignment="Center" Margin="0,0,86,37" TextWrapping="Wrap" Text="{Binding Value, ElementName=MasterSlider}" BorderBrush="#FF25A581" Background="#FFAEAEAE" Foreground="Black" FontFamily="Segoe UI Light" FontSize="12" HorizontalAlignment="Right" Width="36" Height="22" VerticalAlignment="Bottom"/>
+        <Label x:Name="lbl_VolumeMaster"  Content="Volume master:" VerticalAlignment="Bottom" FontFamily="Segoe UI Light" FontSize="13.333" Height="30" Foreground="White" Margin="65,0,0,34" HorizontalAlignment="Left" Width="97"/>
+        <Label x:Name="lbl_VolumePercentage" Content="%" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontFamily="Segoe UI Light" FontSize="13.333" Height="30" Foreground="White" Margin="0,0,66,32"/>
+        <Slider x:Name="NumeroOndeSlider" IsSnapToTickEnabled="True" TickFrequency="1" Style="{StaticResource Horizontal_Slider}" Margin="166,0,128,9" Height="21" VerticalAlignment="Bottom" Value="2" ValueChanged="NumeroOndeSlider_ValueChanged" Minimum="1" Maximum="20"/>
+        <Label x:Name="lbl_NumeroOnde" Content="Numero onde:" VerticalAlignment="Bottom" FontFamily="Segoe UI Light" FontSize="13.333" Height="30" Foreground="White" Margin="65,0,0,6" HorizontalAlignment="Left" Width="91"/>
+        <TextBox x:Name="tb_NumeroOnde" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,70,8" TextWrapping="Wrap" Text="{Binding Value, ElementName=NumeroOndeSlider}" BorderBrush="#FF25A581" Background="#FFAEAEAE" Foreground="Black" FontFamily="Segoe UI Light" FontSize="12" HorizontalAlignment="Right" Width="52" Height="22" VerticalAlignment="Bottom"/>
+        <Button x:Name="btn_Play" Style="{StaticResource RoundedButton}" Margin="10,0,0,10" Height="48" VerticalAlignment="Bottom" Click="btn_Play_Click" HorizontalAlignment="Left" Width="48" Background="#FF262626" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image x:Name="img_btn_Play" Source="Assets/Play.png" Height="32" />
+            </StackPanel>
+        </Button>
+        <Button x:Name="btn_Graph" Style="{StaticResource RoundedButton}" Margin="0,0,10,10" Height="48" VerticalAlignment="Bottom" Foreground="#FF25A581" Background="#FF262626" BorderBrush="#FF262626" HorizontalAlignment="Right" Width="48" Click="btn_Graph_Click">
+            <StackPanel>
+                <Image x:Name="img_btn_Graph" Source="Assets/Graph.png" Height="32" />
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

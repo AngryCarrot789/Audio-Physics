@@ -1,0 +1,124 @@
+﻿<Window x:Class="AudioPhysics.PopupFrequency"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AudioPhysics"
+        mc:Ignorable="d"
+        Title="Lista frequenze" Height="400" Width="300" Background="Black" Foreground="White" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <TextBox x:Name="tb_Frequency" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,67,10" TextWrapping="Wrap" Text="440" BorderBrush="#FF25A581" Background="#FFAEAEAE" Foreground="Black" FontFamily="Segoe UI Light" FontSize="13.333" HorizontalAlignment="Right" Width="51" Height="20" VerticalAlignment="Bottom"/>
+        <Button Style="{StaticResource RoundedButton}" x:Name="button" Content="OK" Margin="0,0,10,10" Height="20" Background="#FF262626" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="52" Click="button_Click" Foreground="#FF25A581"/>
+        <Label x:Name="lbl_Freq" Content="Frequenza attuale:" HorizontalAlignment="Right" Margin="0,0,123,7" Foreground="White" FontFamily="Segoe UI Light" Height="26" VerticalAlignment="Bottom"/>
+        <Label x:Name="lbl_O1" Content="O1" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_O2" Content="O2" HorizontalAlignment="Left" Margin="104,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_O3" Content="O3" HorizontalAlignment="Left" Margin="133,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_O4" Content="O4" HorizontalAlignment="Left" Margin="162,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_O5" Content="O5" HorizontalAlignment="Left" Margin="191,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_06" Content="O6" HorizontalAlignment="Left" Margin="220,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_07" Content="O7" HorizontalAlignment="Left" Margin="248,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_C" Content="Do / C" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_D" Content="Re / D" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_E" Content="Mi / E" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_F" Content="Fa / F" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_G" Content="Sol / G" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_A" Content="La / A" HorizontalAlignment="Left" Margin="10,236,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_B" Content="Si / B" HorizontalAlignment="Left" Margin="10,281,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_CS" Content="Do# / C#" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_DS" Content="Re# / D#" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_FS" Content="Fa# / F#" HorizontalAlignment="Left" Margin="10,168,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_GS" Content="Sol# / G#" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Label x:Name="lbl_AS" Content="La# / A#" HorizontalAlignment="Left" Margin="10,258,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="10.667"/>
+        <Rectangle Fill="#FF1F3DC7" HorizontalAlignment="Left" Height="313" Margin="101,10,0,0" VerticalAlignment="Top" Width="1"/>
+        <Rectangle Fill="#FF1F3DC7" HorizontalAlignment="Left" Height="313" Margin="130,10,0,0" VerticalAlignment="Top" Width="1"/>
+        <Rectangle Fill="#FF1F3DC7" HorizontalAlignment="Left" Height="313" Margin="159,10,0,0" VerticalAlignment="Top" Width="1"/>
+        <Rectangle Fill="#FF1F3DC7" HorizontalAlignment="Left" Height="313" Margin="188,10,0,0" VerticalAlignment="Top" Width="1"/>
+        <Rectangle Fill="#FF1F3DC7" HorizontalAlignment="Left" Height="313" Margin="217,10,0,0" VerticalAlignment="Top" Width="1"/>
+        <Rectangle Fill="#FF1F3DC7" HorizontalAlignment="Left" Height="313" Margin="246,10,0,0" VerticalAlignment="Top" Width="1"/>
+        <Button x:Name="btn_O7_C" Click="btn_O7_C_Click" HorizontalAlignment="Left" Margin="252,39,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O7_CS" Click="btn_O7_CS_Click" HorizontalAlignment="Left" Margin="252,61,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O7_D" Click="btn_O7_D_Click" HorizontalAlignment="Left" Margin="252,83,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O7_DS" Click="btn_O7_DS_Click" HorizontalAlignment="Left" Margin="252,106,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O7_E" Click="btn_O7_E_Click" HorizontalAlignment="Left" Margin="252,128,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O7_F" Click="btn_O7_F_Click" HorizontalAlignment="Left" Margin="252,150,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O7_FS" Click="btn_O7_FS_Click" HorizontalAlignment="Left" Margin="252,172,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O7_G" Click="btn_O7_G_Click" HorizontalAlignment="Left" Margin="252,195,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O7_GS" Click="btn_O7_GS_Click" HorizontalAlignment="Left" Margin="252,217,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O7_A" Click="btn_O7_A_Click" HorizontalAlignment="Left" Margin="252,239,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O7_AS" Click="btn_O7_AS_Click" HorizontalAlignment="Left" Margin="252,261,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O7_B" Click="btn_O7_B_Click" HorizontalAlignment="Left" Margin="252,284,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581" />
+        <Button x:Name="btn_O6_C" Click="btn_O6_C_Click" HorizontalAlignment="Left" Margin="223,39,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O6_CS" Click="btn_O6_CS_Click" HorizontalAlignment="Left" Margin="223,61,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O6_D" Click="btn_O6_D_Click" HorizontalAlignment="Left" Margin="223,83,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O6_DS" Click="btn_O6_DS_Click" HorizontalAlignment="Left" Margin="223,106,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O6_E" Click="btn_O6_E_Click" HorizontalAlignment="Left" Margin="223,128,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O6_F" Click="btn_O6_F_Click" HorizontalAlignment="Left" Margin="223,150,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O6_FS" Click="btn_O6_FS_Click" HorizontalAlignment="Left" Margin="223,172,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O6_G" Click="btn_O6_G_Click" HorizontalAlignment="Left" Margin="223,195,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O6_GS" Click="btn_O6_GS_Click" HorizontalAlignment="Left" Margin="223,217,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O6_A" Click="btn_O6_A_Click" HorizontalAlignment="Left" Margin="223,239,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O6_AS" Click="btn_O6_AS_Click" HorizontalAlignment="Left" Margin="223,261,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O6_B" Click="btn_O6_B_Click" HorizontalAlignment="Left" Margin="223,284,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581" />
+        <Button x:Name="btn_O5_C" Click="btn_O5_C_Click" HorizontalAlignment="Left" Margin="194,39,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O5_CS" Click="btn_O5_CS_Click" HorizontalAlignment="Left" Margin="194,61,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O5_D" Click="btn_O5_D_Click" HorizontalAlignment="Left" Margin="194,83,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O5_DS" Click="btn_O5_DS_Click" HorizontalAlignment="Left" Margin="194,106,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O5_E" Click="btn_O5_E_Click" HorizontalAlignment="Left" Margin="194,128,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O5_F" Click="btn_O5_F_Click" HorizontalAlignment="Left" Margin="194,150,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O5_FS" Click="btn_O5_FS_Click" HorizontalAlignment="Left" Margin="194,172,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O5_G" Click="btn_O5_G_Click" HorizontalAlignment="Left" Margin="194,195,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O5_GS" Click="btn_O5_GS_Click" HorizontalAlignment="Left" Margin="194,217,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O5_A" Click="btn_O5_A_Click" HorizontalAlignment="Left" Margin="194,239,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O5_AS" Click="btn_O5_AS_Click" HorizontalAlignment="Left" Margin="194,261,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O5_B" Click="btn_O5_B_Click" HorizontalAlignment="Left" Margin="194,284,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581" />
+        <Button x:Name="btn_O4_C" Click="btn_O4_C_Click" HorizontalAlignment="Left" Margin="165,39,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O4_CS" Click="btn_O4_CS_Click" HorizontalAlignment="Left" Margin="165,61,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O4_D" Click="btn_O4_D_Click" HorizontalAlignment="Left" Margin="165,83,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O4_DS" Click="btn_O4_DS_Click" HorizontalAlignment="Left" Margin="165,106,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O4_E" Click="btn_O4_E_Click" HorizontalAlignment="Left" Margin="165,128,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O4_F" Click="btn_O4_F_Click" HorizontalAlignment="Left" Margin="165,150,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O4_FS" Click="btn_O4_FS_Click" HorizontalAlignment="Left" Margin="165,172,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O4_G" Click="btn_O4_G_Click" HorizontalAlignment="Left" Margin="165,195,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O4_GS" Click="btn_O4_GS_Click" HorizontalAlignment="Left" Margin="165,217,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O4_A" Click="btn_O4_A_Click" HorizontalAlignment="Left" Margin="165,239,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O4_AS" Click="btn_O4_AS_Click" HorizontalAlignment="Left" Margin="165,261,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O4_B" Click="btn_O4_B_Click" HorizontalAlignment="Left" Margin="165,284,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581" />
+        <Button x:Name="btn_O3_C" Click="btn_O3_C_Click" HorizontalAlignment="Left" Margin="136,39,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O3_CS" Click="btn_O3_CS_Click" HorizontalAlignment="Left" Margin="136,61,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O3_D" Click="btn_O3_D_Click" HorizontalAlignment="Left" Margin="136,83,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O3_DS" Click="btn_O3_DS_Click" HorizontalAlignment="Left" Margin="136,106,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O3_E" Click="btn_O3_E_Click" HorizontalAlignment="Left" Margin="136,128,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O3_F" Click="btn_O3_F_Click" HorizontalAlignment="Left" Margin="136,150,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O3_FS" Click="btn_O3_FS_Click" HorizontalAlignment="Left" Margin="136,172,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O3_G" Click="btn_O3_G_Click" HorizontalAlignment="Left" Margin="136,195,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O3_GS" Click="btn_O3_GS_Click" HorizontalAlignment="Left" Margin="136,217,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O3_A" Click="btn_O3_A_Click" HorizontalAlignment="Left" Margin="136,239,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O3_AS" Click="btn_O3_AS_Click" HorizontalAlignment="Left" Margin="136,261,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O3_B" Click="btn_O3_B_Click" HorizontalAlignment="Left" Margin="136,284,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_C" Click="btn_O2_C_Click" HorizontalAlignment="Left" Margin="107,39,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_CS" Click="btn_O2_CS_Click" HorizontalAlignment="Left" Margin="107,61,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_D" Click="btn_O2_D_Click" HorizontalAlignment="Left" Margin="107,83,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_DS" Click="btn_O2_DS_Click" HorizontalAlignment="Left" Margin="107,106,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_E" Click="btn_O2_E_Click" HorizontalAlignment="Left" Margin="107,128,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_F" Click="btn_O2_F_Click" HorizontalAlignment="Left" Margin="107,150,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_FS" Click="btn_O2_FS_Click" HorizontalAlignment="Left" Margin="107,172,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_G" Click="btn_O2_G_Click" HorizontalAlignment="Left" Margin="107,195,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_GS" Click="btn_O2_GS_Click" HorizontalAlignment="Left" Margin="107,217,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_A" Click="btn_O2_A_Click" HorizontalAlignment="Left" Margin="107,239,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_AS" Click="btn_O2_AS_Click" HorizontalAlignment="Left" Margin="107,261,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O2_B" Click="btn_O2_B_Click" HorizontalAlignment="Left" Margin="107,284,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_C" Click="btn_O1_C_Click" HorizontalAlignment="Left" Margin="78,39,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_CS" Click="btn_O1_CS_Click" HorizontalAlignment="Left" Margin="78,61,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_D" Click="btn_O1_D_Click" HorizontalAlignment="Left" Margin="78,83,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_DS" Click="btn_O1_DS_Click" HorizontalAlignment="Left" Margin="78,106,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_E" Click="btn_O1_E_Click" HorizontalAlignment="Left" Margin="78,128,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_F" Click="btn_O1_F_Click" HorizontalAlignment="Left" Margin="78,150,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_FS" Click="btn_O1_FS_Click" HorizontalAlignment="Left" Margin="78,172,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_G" Click="btn_O1_G_Click" HorizontalAlignment="Left" Margin="78,195,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_GS" Click="btn_O1_GS_Click" HorizontalAlignment="Left" Margin="78,217,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_A" Click="btn_O1_A_Click" HorizontalAlignment="Left" Margin="78,239,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_AS" Click="btn_O1_AS_Click" HorizontalAlignment="Left" Margin="78,261,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+        <Button x:Name="btn_O1_B" Click="btn_O1_B_Click" HorizontalAlignment="Left" Margin="78,284,0,0" VerticalAlignment="Top" Width="18" Height="18" BorderBrush="#FF25A581" Background="#FF25A581"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,160 @@
+C:\Users\abdel\AppData\Local\Temporary Projects\AudioPhysics\bin\Debug\AudioPhysics.exe.config
+C:\Users\abdel\AppData\Local\Temporary Projects\AudioPhysics\obj\Debug\AudioPhysics.csprojResolveAssemblyReference.cache
+C:\Users\abdel\AppData\Local\Temporary Projects\AudioPhysics\obj\Debug\MainWindow.g.cs
+C:\Users\abdel\AppData\Local\Temporary Projects\AudioPhysics\obj\Debug\Oscillatore.g.cs
+C:\Users\abdel\AppData\Local\Temporary Projects\AudioPhysics\obj\Debug\App.g.cs
+C:\Users\abdel\AppData\Local\Temporary Projects\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.cache
+C:\Users\abdel\AppData\Local\Temporary Projects\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.lref
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe.config
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csprojResolveAssemblyReference.cache
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.g.cs
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.g.cs
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\App.g.cs
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.cache
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.lref
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.pdb
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\App.baml
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.baml
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.baml
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\Styles\Styles.baml
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.g.resources
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.Properties.Resources.resources
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csproj.GenerateResource.Cache
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.exe
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.pdb
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.g.cs
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.baml
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\bin\Debug\NAudio.dll
+C:\Users\abdel\Documents\Visual Studio 2015\Projects\AudioPhysics\AudioPhysics\bin\Debug\NAudio.xml
+G:\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe.config
+G:\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.exe
+G:\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.pdb
+G:\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe
+G:\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.pdb
+G:\AudioPhysics\AudioPhysics\bin\Debug\NAudio.dll
+G:\AudioPhysics\AudioPhysics\bin\Debug\NAudio.xml
+G:\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csprojResolveAssemblyReference.cache
+G:\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.g.cs
+G:\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.g.cs
+G:\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.g.cs
+G:\AudioPhysics\AudioPhysics\obj\Debug\App.g.cs
+G:\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.cache
+G:\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.lref
+G:\AudioPhysics\AudioPhysics\obj\Debug\App.baml
+G:\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.baml
+G:\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.baml
+G:\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.baml
+G:\AudioPhysics\AudioPhysics\obj\Debug\Styles\Styles.baml
+G:\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.g.resources
+G:\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.Properties.Resources.resources
+G:\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csproj.GenerateResource.Cache
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe.config
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.exe
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.pdb
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.pdb
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\NAudio.dll
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\NAudio.xml
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csprojResolveAssemblyReference.cache
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.g.cs
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.g.cs
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.g.cs
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\App.g.cs
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.cache
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.lref
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\App.baml
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.baml
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.baml
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.baml
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\Styles\Styles.baml
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.g.resources
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.Properties.Resources.resources
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csproj.GenerateResource.Cache
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\OxyPlot.dll
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\OxyPlot.Wpf.dll
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\OxyPlot.Xps.dll
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\OxyPlot.pdb
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\OxyPlot.xml
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\OxyPlot.Wpf.pdb
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\OxyPlot.Wpf.xml
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\OxyPlot.Xps.pdb
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\bin\Debug\OxyPlot.Xps.xml
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\Grafico.g.cs
+C:\Users\ADeltaX\Documents\AudioPhysics\AudioPhysics\obj\Debug\Grafico.baml
+E:\OK\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe.config
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.exe
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.pdb
+E:\OK\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe
+E:\OK\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.pdb
+E:\OK\AudioPhysics\AudioPhysics\bin\Debug\NAudio.dll
+E:\OK\AudioPhysics\AudioPhysics\bin\Debug\NAudio.xml
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csprojResolveAssemblyReference.cache
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.g.cs
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.g.cs
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.g.cs
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\Grafico.g.cs
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\App.g.cs
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.cache
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.lref
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\App.baml
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.baml
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.baml
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.baml
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\Grafico.baml
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\Styles\Styles.baml
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.g.resources
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.Properties.Resources.resources
+E:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csproj.GenerateResource.Cache
+F:\OK\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe.config
+F:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.exe
+F:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csprojResolveAssemblyReference.cache
+F:\OK\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.g.cs
+F:\OK\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.g.cs
+F:\OK\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.g.cs
+F:\OK\AudioPhysics\AudioPhysics\obj\Debug\Grafico.g.cs
+F:\OK\AudioPhysics\AudioPhysics\obj\Debug\App.g.cs
+F:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.cache
+F:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.lref
+G:\OK\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe.config
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.exe
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csprojResolveAssemblyReference.cache
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.g.cs
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.g.cs
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.g.cs
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\Grafico.g.cs
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\App.g.cs
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.cache
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.lref
+G:\OK\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe
+G:\OK\AudioPhysics\AudioPhysics\bin\Debug\NAudio.dll
+G:\OK\AudioPhysics\AudioPhysics\bin\Debug\NAudio.xml
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\App.baml
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.baml
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.baml
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.baml
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\Grafico.baml
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\Styles\Styles.baml
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.g.resources
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.Properties.Resources.resources
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csproj.GenerateResource.Cache
+G:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.pdb
+G:\OK\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.pdb
+H:\OK\AudioPhysics\AudioPhysics\bin\Debug\AudioPhysics.exe.config
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.exe
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.pdb
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.csprojResolveAssemblyReference.cache
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.g.cs
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.g.cs
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.g.cs
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\Grafico.g.cs
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\App.g.cs
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.cache
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics_MarkupCompile.lref
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\App.baml
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\MainWindow.baml
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\Oscillatore.baml
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\PopupFrequency.baml
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\Grafico.baml
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\Styles\Styles.baml
+H:\OK\AudioPhysics\AudioPhysics\obj\Debug\AudioPhysics.g.resources
