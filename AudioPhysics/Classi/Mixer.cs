@@ -26,9 +26,9 @@ namespace AudioPhysics.Classi
             Wo.Stop();
         }
 
-        public void Volume(float _volume)
+        public void Volume(float volume)
         {
-            volume = _volume;
+            _volume = volume;
         }
 
     }
