@@ -1,10 +1,7 @@
 # Audio-Physics
 
-## This is an example of how you should NOT use this code style.
-
-Wave oscillator made in C# and xaml (WPF)
-
-You can create up to 20 oscillators.
-
-Upcoming changelog:
-Detune
+## An audio generator
+With this, you can generate multiple tones and combine them.
+Currently, you can adjust the
+- Volume, Frequency and Wave Offset.
+- Type of wave: Sine, Triangle, Square, Cosine (Inverted sine.. i think), Sawtooth and noise (Noise is slightly broken. dont alter the volume)
