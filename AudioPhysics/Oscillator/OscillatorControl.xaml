@@ -7,7 +7,8 @@
              mc:Ignorable="d" 
              Height="125" d:DesignWidth="500">
     <Grid Background="Transparent">
-        <Grid Margin="0,0,0,5">
+        <CheckBox Content="Enabled" IsChecked="{Binding IsEnabled, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="85,0,0,0"/>
+        <Grid IsEnabled="{Binding IsEnabled, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="2"/>
@@ -19,7 +20,6 @@
                 </Grid.Resources>
                 <Label Content="{Binding ChannelName, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 <Label Content="{Binding WaveName, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,20,0,0" FontSize="16"/>
-                <Label Content="{Binding IsReady, Converter={StaticResource BoolToReady}, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" VerticalAlignment="Top"/>
                 <Grid Margin="0,51,4,5">
                     <Grid.Resources>
                         <converters:MultiBoolToEnumConverter x:Key="MultiBoolEnum"/>
@@ -73,7 +73,7 @@
                 <Label Content="Wave Offset" VerticalAlignment="Center" Grid.Row="3" Height="26" />
 
                 <Slider Value="{Binding Volume, UpdateSourceTrigger=PropertyChanged}"
-                        Minimum="1" Maximum="100" 
+                        Minimum="0.01" Maximum="100" 
                         SmallChange="1" LargeChange="10" TickFrequency="1"
                         Grid.Column="1" VerticalAlignment="Center" Margin="0,4,5,5"/>
                 <Slider Value="{Binding Frequency, UpdateSourceTrigger=PropertyChanged}" 

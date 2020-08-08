@@ -5,6 +5,7 @@ using NAudio.Wave.SampleProviders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -57,11 +58,11 @@ namespace AudioPhysics.Oscillator
             set => RaisePropertyChanged(ref _waveOffset, value, UpdateWaveOffset);
         }
 
-        private bool _isReady;
-        public bool IsReady
+        private bool _isEnabled;
+        public bool IsEnabled
         {
-            get => _isReady;
-            set => RaisePropertyChanged(ref _isReady, value);
+            get => _isEnabled;
+            set => RaisePropertyChanged(ref _isEnabled, value, UpdateEnabledStatus);
         }
 
         private SignalType _signalWaveType;
@@ -103,7 +104,7 @@ namespace AudioPhysics.Oscillator
 
             WaveProvider = new SampleToWaveProvider(Generator);
 
-            IsReady = true;
+            IsEnabled = true;
 
             UpdateGenerator(SignalType.Sinewave);
 
@@ -178,6 +179,21 @@ namespace AudioPhysics.Oscillator
                 case SignalType.Trianglewave: WaveName = "Triangle wave"; break;
                 case SignalType.Sawtoothwave: WaveName = "Sawtooth wave"; break;
                 case SignalType.Noisewave: WaveName = "Noise/Random"; break;
+            }
+        }
+
+        private double _prevVolume;
+
+        public void UpdateEnabledStatus(bool enabled)
+        {
+            if (enabled)
+            {
+                Volume = _prevVolume;
+            }
+            else
+            {
+                _prevVolume = Volume;
+                Volume = 0.01;
             }
         }
 
