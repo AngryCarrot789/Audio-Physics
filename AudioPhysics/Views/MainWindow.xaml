@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="Audio Generator" 
         Height="600" Width="600"
-        MinWidth="400"
+        MinWidth="450" MinHeight="369"
         Style="{DynamicResource CustomWindowStyle}">
     <Window.Resources>
         <Converters:BoolToIsPlayingIconConverter x:Key="BoolToIsPlayingIconConverter"/>
@@ -17,7 +17,8 @@
         <ListBox HorizontalContentAlignment="Stretch" Margin="0,0,0,65"
                  ItemsSource="{Binding Oscillators, UpdateSourceTrigger=PropertyChanged}"
                  SelectedItem="{Binding SelectedOscillator, UpdateSourceTrigger=PropertyChanged}"
-                 ScrollViewer.IsDeferredScrollingEnabled="False">
+                 ScrollViewer.IsDeferredScrollingEnabled="False"
+                 ScrollViewer.CanContentScroll="False">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <oscillator:OscillatorControl DataContext="{Binding}"/>

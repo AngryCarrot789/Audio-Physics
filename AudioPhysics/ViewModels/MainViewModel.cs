@@ -141,6 +141,7 @@ namespace AudioPhysics.ViewModels
         public OscillatorViewModel CreateOscillator()
         {
             OscillatorViewModel oscillator = new OscillatorViewModel(MainMixer);
+            oscillator.RemoveCallback = RemoveOscillator;
             oscillator.UpdateGraphCallback = UpdateGraph;
             oscillator.Volume = MasterVolume;
             oscillator.ChannelName = $"Oscillator {Oscillators.Count}";

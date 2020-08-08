@@ -85,8 +85,11 @@ namespace AudioPhysics.Oscillator
         public AudioMixer Mixer { get; }
 
         public Action UpdateGraphCallback { get; set; }
+        public Action<OscillatorViewModel> RemoveCallback { get; set; }
 
         public ICommand SetOffsetCommand { get; }
+
+        public ICommand RemoveCommand { get; }
 
         public OscillatorViewModel(AudioMixer mixer)
         {
@@ -109,6 +112,12 @@ namespace AudioPhysics.Oscillator
             UpdateGenerator(SignalType.Sinewave);
 
             SetOffsetCommand = new CommandParam<string>(SetWaveOffset);
+            RemoveCommand = new Command(Close);
+        }
+
+        public void Close()
+        {
+            RemoveCallback?.Invoke(this);
         }
 
         public void SetupDefaultValues()

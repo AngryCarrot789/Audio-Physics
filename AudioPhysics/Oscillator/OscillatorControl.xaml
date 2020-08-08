@@ -8,6 +8,8 @@
              Height="125" d:DesignWidth="500">
     <Grid Background="Transparent">
         <CheckBox Content="Enabled" IsChecked="{Binding IsEnabled, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="85,0,0,0"/>
+        <Button Command="{Binding RemoveCommand}" Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="126,24,0,0"/>
+
         <Grid IsEnabled="{Binding IsEnabled, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150"/>
@@ -18,8 +20,8 @@
                 <Grid.Resources>
                     <converters:BoolToReadyConverter x:Key="BoolToReady"/>
                 </Grid.Resources>
-                <Label Content="{Binding ChannelName, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <Label Content="{Binding WaveName, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,20,0,0" FontSize="16"/>
+                <Label Content="{Binding ChannelName, UpdateSourceTrigger=PropertyChanged, FallbackValue=Channel}" VerticalAlignment="Top" Margin="0,0,70,0"/>
+                <Label Content="{Binding WaveName, UpdateSourceTrigger=PropertyChanged, FallbackValue=Wave}" VerticalAlignment="Top" Margin="2,20,28,0" FontSize="14"/>
                 <Grid Margin="0,51,4,5">
                     <Grid.Resources>
                         <converters:MultiBoolToEnumConverter x:Key="MultiBoolEnum"/>
@@ -85,8 +87,8 @@
                         SmallChange="1" LargeChange="10" TickFrequency="1"
                         Grid.Column="1" VerticalAlignment="Center" Grid.Row="2" Margin="0,4,5,5"/>
                 <Slider Value="{Binding WaveOffset, UpdateSourceTrigger=PropertyChanged}"
-                        Minimum="-6.283185307179586" Maximum="6.283185307179586"
-                        SmallChange="1" LargeChange="10" TickFrequency="1"
+                        Minimum="-6.283" Maximum="6.283"
+                        SmallChange="0.1" LargeChange="1" TickFrequency="0.1"
                         Grid.Column="1" VerticalAlignment="Center" Grid.Row="3" Margin="0,5,5,4">
                     <Slider.ContextMenu>
                         <ContextMenu>
