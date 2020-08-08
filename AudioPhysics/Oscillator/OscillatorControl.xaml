@@ -1,0 +1,119 @@
+﻿<UserControl x:Class="AudioPhysics.Oscillator.OscillatorControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AudioPhysics.Oscillator" xmlns:converters="clr-namespace:AudioPhysics.Converters"
+             mc:Ignorable="d" 
+             Height="125" d:DesignWidth="500">
+    <Grid Background="Transparent">
+        <Grid Margin="0,0,0,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="2"/>
+                <ColumnDefinition Width="13*"/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.Resources>
+                    <converters:BoolToReadyConverter x:Key="BoolToReady"/>
+                </Grid.Resources>
+                <Label Content="{Binding ChannelName, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Content="{Binding WaveName, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,20,0,0" FontSize="16"/>
+                <Label Content="{Binding IsReady, Converter={StaticResource BoolToReady}, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <Grid Margin="0,51,4,5">
+                    <Grid.Resources>
+                        <converters:MultiBoolToEnumConverter x:Key="MultiBoolEnum"/>
+                    </Grid.Resources>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton ToolTip="Sine wave" IsChecked="{Binding SignalWaveType, ConverterParameter=Sinewave, Converter={StaticResource MultiBoolEnum}, UpdateSourceTrigger=PropertyChanged}" Height="Auto">
+                        <Image Margin="0 4 4 4" Source="/AudioPhysics;component/Resources/Sin.png" RenderOptions.BitmapScalingMode="Fant" RenderOptions.EdgeMode="Aliased"/>
+                    </RadioButton>
+                    <RadioButton ToolTip="Triangle wave" IsChecked="{Binding SignalWaveType, ConverterParameter=Trianglewave, Converter={StaticResource MultiBoolEnum}, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Height="Auto">
+                        <Image Margin="0 4 4 4" Source="/AudioPhysics;component/Resources/Tri.png" RenderOptions.BitmapScalingMode="Fant" RenderOptions.EdgeMode="Aliased"/>
+                    </RadioButton>
+                    <RadioButton ToolTip="Square wave" IsChecked="{Binding SignalWaveType, ConverterParameter=Squarewave, Converter={StaticResource MultiBoolEnum}, UpdateSourceTrigger=PropertyChanged}" Grid.Column="2" Height="Auto">
+                        <Image Margin="0 4 4 4" Source="/AudioPhysics;component/Resources/Quad.png" RenderOptions.BitmapScalingMode="Fant" RenderOptions.EdgeMode="Aliased"/>
+                    </RadioButton>
+                    <RadioButton ToolTip="Cosine wave" IsChecked="{Binding SignalWaveType, ConverterParameter=Cosinewave, Converter={StaticResource MultiBoolEnum}, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Height="Auto">
+                        <Image Margin="0 4 4 4" Source="/AudioPhysics;component/Resources/Cos.png" RenderOptions.BitmapScalingMode="Fant" RenderOptions.EdgeMode="Aliased"/>
+                    </RadioButton>
+                    <RadioButton ToolTip="Sawtooth wave" IsChecked="{Binding SignalWaveType, ConverterParameter=Sawtoothwave, Converter={StaticResource MultiBoolEnum}, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="1" Height="Auto">
+                        <Image Margin="0 4 4 4" Source="/AudioPhysics;component/Resources/Saw.png" RenderOptions.BitmapScalingMode="Fant" RenderOptions.EdgeMode="Aliased"/>
+                    </RadioButton>
+                    <RadioButton ToolTip="Noise" IsChecked="{Binding SignalWaveType, ConverterParameter=Noisewave, Converter={StaticResource MultiBoolEnum}, UpdateSourceTrigger=PropertyChanged}" Grid.Column="2" Grid.Row="1" Height="Auto">
+                        <Image Margin="0 4 4 4" Source="/AudioPhysics;component/Resources/Rnd.png" RenderOptions.BitmapScalingMode="Fant" RenderOptions.EdgeMode="Aliased"/>
+                    </RadioButton>
+                </Grid>
+            </Grid>
+            <Separator Grid.Column="1" Margin="0" Style="{DynamicResource VerticalSeparator}"/>
+            <Grid Grid.Column="2" Margin="4,2,0,2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="114*"/>
+                    <ColumnDefinition Width="70"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Volume" VerticalAlignment="Center" Grid.Row="0" Height="26"/>
+                <Label Content="Frequency" VerticalAlignment="Center" Grid.Row="1" Height="26"/>
+                <Label Content="De-tune" VerticalAlignment="Center" Grid.Row="2" Height="26" />
+                <Label Content="Wave Offset" VerticalAlignment="Center" Grid.Row="3" Height="26" />
+
+                <Slider Value="{Binding Volume, UpdateSourceTrigger=PropertyChanged}"
+                        Minimum="1" Maximum="100" 
+                        SmallChange="1" LargeChange="10" TickFrequency="1"
+                        Grid.Column="1" VerticalAlignment="Center" Margin="0,4,5,5"/>
+                <Slider Value="{Binding Frequency, UpdateSourceTrigger=PropertyChanged}" 
+                        Minimum="2" Maximum="20000" Grid.Column="1" 
+                        SmallChange="1" LargeChange="10" TickFrequency="1"
+                        VerticalAlignment="Center" Grid.Row="1" Margin="0,5,5,4"/>
+                <Slider Value="{Binding DeTune, UpdateSourceTrigger=PropertyChanged}"
+                        Minimum="-100" Maximum="100" 
+                        SmallChange="1" LargeChange="10" TickFrequency="1"
+                        Grid.Column="1" VerticalAlignment="Center" Grid.Row="2" Margin="0,4,5,5"/>
+                <Slider Value="{Binding WaveOffset, UpdateSourceTrigger=PropertyChanged}"
+                        Minimum="-6.283185307179586" Maximum="6.283185307179586"
+                        SmallChange="1" LargeChange="10" TickFrequency="1"
+                        Grid.Column="1" VerticalAlignment="Center" Grid.Row="3" Margin="0,5,5,4">
+                    <Slider.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Header="2π"    Template="{DynamicResource SingleDropDownMenuItem}" Command="{Binding SetOffsetCommand}" CommandParameter="2pi"/>
+                            <MenuItem Header="3/2π"  Template="{DynamicResource SingleDropDownMenuItem}" Command="{Binding SetOffsetCommand}" CommandParameter="32pi"/>
+                            <MenuItem Header="π"     Template="{DynamicResource SingleDropDownMenuItem}" Command="{Binding SetOffsetCommand}" CommandParameter="pi"/>
+                            <MenuItem Header="π/2"   Template="{DynamicResource SingleDropDownMenuItem}" Command="{Binding SetOffsetCommand}" CommandParameter="pi2"/>
+                            <MenuItem Header="0"     Template="{DynamicResource SingleDropDownMenuItem}" Command="{Binding SetOffsetCommand}" CommandParameter="0"/>
+                            <MenuItem Header="-π/2"  Template="{DynamicResource SingleDropDownMenuItem}" Command="{Binding SetOffsetCommand}" CommandParameter="npi2"/>
+                            <MenuItem Header="-π"    Template="{DynamicResource SingleDropDownMenuItem}" Command="{Binding SetOffsetCommand}" CommandParameter="npi"/>
+                            <MenuItem Header="-3/2π" Template="{DynamicResource SingleDropDownMenuItem}" Command="{Binding SetOffsetCommand}" CommandParameter="n32pi"/>
+                            <MenuItem Header="-2π"   Template="{DynamicResource SingleDropDownMenuItem}" Command="{Binding SetOffsetCommand}" CommandParameter="n2pi"/>
+                        </ContextMenu>
+                    </Slider.ContextMenu>
+                </Slider>
+
+                <TextBox Text="{Binding Volume, UpdateSourceTrigger=PropertyChanged}"     Padding="2" VerticalAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Margin="0 0 22 0" FontSize="14" Grid.Row="0"/>
+                <TextBox Text="{Binding Frequency, UpdateSourceTrigger=PropertyChanged}"  Padding="2" VerticalAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Margin="0 0 22 0" FontSize="14" Grid.Row="1"/>
+                <TextBox Text="{Binding DeTune, UpdateSourceTrigger=PropertyChanged}"     Padding="2" VerticalAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Margin="0 0 22 0" FontSize="14" Grid.Row="2"/>
+                <TextBox Text="{Binding WaveOffset, UpdateSourceTrigger=PropertyChanged}" Padding="2" VerticalAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Margin="0 0 22 0" FontSize="14" Grid.Row="3"/>
+
+                <Label Content="%"   VerticalAlignment="Center" HorizontalContentAlignment="Center" Padding="0 5" Grid.Column="2" Margin="0" HorizontalAlignment="Right" Width="22"/>
+                <Label Content="Hz"  VerticalAlignment="Center" HorizontalContentAlignment="Center" Padding="0 5" Grid.Column="2" Margin="0" Grid.Row="1" HorizontalAlignment="Right" Width="22"/>
+                <Label Content="+/-" VerticalAlignment="Center" HorizontalContentAlignment="Center" Padding="0 5" Grid.Column="2" Margin="0" Grid.Row="2" HorizontalAlignment="Right" Width="22"/>
+                <Label Content="Rad" VerticalAlignment="Center" HorizontalContentAlignment="Center" Padding="0 5" Grid.Column="2" Margin="0" Grid.Row="3" HorizontalAlignment="Right" Width="22"/>
+            </Grid>
+        </Grid>
+        <Separator VerticalAlignment="Bottom" Margin="0"/>
+    </Grid>
+</UserControl>

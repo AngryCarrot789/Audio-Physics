@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\OK\AudioPhysics\AudioPhysics\obj\Debug\
+F:\AudioPhysics\AudioPhysics\obj\Debug\
 AudioPhysics
 none
 false
 DEBUG;TRACE
-G:\OK\AudioPhysics\AudioPhysics\App.xaml
-5575651281
+F:\AudioPhysics\AudioPhysics\App.xaml
+5-2100563572
 
-13-1168131422
-14-665074026
-MainWindow.xaml;Oscillatore.xaml;PopupFrequency.xaml;Grafico.xaml;Styles\Styles.xaml;
+27-1440901260
+15-456505562
+Oscillator\OscillatorControl.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;Views\GraphWindow.xaml;Views\MainWindow.xaml;
 
 False
 

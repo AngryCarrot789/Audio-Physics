@@ -59,6 +59,7 @@
     <Reference Include="NAudio">
       <HintPath>.\NAudio.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework.Aero2" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -79,50 +80,65 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Classi\AnimationLib.cs" />
-    <Compile Include="Grafico.xaml.cs">
-      <DependentUpon>Grafico.xaml</DependentUpon>
+    <Compile Include="Helpers\AnimationLib.cs" />
+    <Compile Include="Converters\BoolToIsPlayingIconConverter.cs" />
+    <Compile Include="Converters\BoolToReadyConverter.cs" />
+    <Compile Include="Converters\MultiBoolToEnumConverter.cs" />
+    <Compile Include="Generator\AudioMixer.cs" />
+    <Compile Include="Generator\GeneratorHelpers.cs" />
+    <Compile Include="Generator\OscillatorSignalGenerator.cs" />
+    <Compile Include="Helpers\GlobalVariables.cs" />
+    <Compile Include="Interfaces\IAnimatable.cs" />
+    <Compile Include="Oscillator\IOscillator.cs" />
+    <Compile Include="Oscillator\OscillatorControl.xaml.cs">
+      <DependentUpon>OscillatorControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Provider\FrequenzeBase.cs" />
-    <Compile Include="Provider\GeneratoreSegnale.cs" />
-    <Compile Include="Provider\Funzioni.cs" />
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
+    <Compile Include="Oscillator\OscillatorViewModel.cs" />
+    <Compile Include="Oscillator\SignalType.cs" />
+    <Compile Include="Helpers\NoteFrequencies.cs" />
+    <Compile Include="Themes\DarkTheme.xaml.cs">
+      <DependentUpon>DarkTheme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\LightTheme.xaml.cs">
+      <DependentUpon>LightTheme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\ThemesController.cs" />
+    <Compile Include="Utilities\BaseViewModel.cs" />
+    <Compile Include="Utilities\Command.cs" />
+    <Compile Include="Utilities\CommandParam.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="Views\GraphWindow.xaml.cs">
+      <DependentUpon>GraphWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classi\Mixer.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="Oscillatore.xaml">
+    <Page Include="Oscillator\OscillatorControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PopupFrequency.xaml">
+    <Page Include="Themes\DarkTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\LightTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\GraphWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Grafico.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Styles\Styles.xaml">
+    <Page Include="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Oscillatore.xaml.cs">
-      <DependentUpon>Oscillatore.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PopupFrequency.xaml.cs">
-      <DependentUpon>PopupFrequency.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -150,21 +166,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\Cos.png" />
-    <Resource Include="Assets\Quad.png" />
-    <Resource Include="Assets\Rnd.png" />
-    <Resource Include="Assets\Saw.png" />
-    <Resource Include="Assets\Sin.png" />
-    <Resource Include="Assets\Tri.png" />
+    <Resource Include="Resources\Cos.png" />
+    <Resource Include="Resources\Quad.png" />
+    <Resource Include="Resources\Rnd.png" />
+    <Resource Include="Resources\Saw.png" />
+    <Resource Include="Resources\Sin.png" />
+    <Resource Include="Resources\Tri.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\Play.png" />
+    <Resource Include="Resources\Play.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\Stop.png" />
+    <Resource Include="Resources\Stop.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\Graph.png" />
+    <Resource Include="Resources\Graph.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

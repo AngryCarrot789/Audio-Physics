@@ -1,8 +1,6 @@
 ﻿
-FG:\OK\AudioPhysics\AudioPhysics\App.xaml;;
-FG:\OK\AudioPhysics\AudioPhysics\MainWindow.xaml;;
-FG:\OK\AudioPhysics\AudioPhysics\Oscillatore.xaml;;
-FG:\OK\AudioPhysics\AudioPhysics\PopupFrequency.xaml;;
-FG:\OK\AudioPhysics\AudioPhysics\Grafico.xaml;;
-FG:\OK\AudioPhysics\AudioPhysics\Styles\Styles.xaml;;
+FF:\AudioPhysics\AudioPhysics\App.xaml;;
+FF:\AudioPhysics\AudioPhysics\Oscillator\OscillatorControl.xaml;;
+FF:\AudioPhysics\AudioPhysics\Views\GraphWindow.xaml;;
+FF:\AudioPhysics\AudioPhysics\Views\MainWindow.xaml;;
 
