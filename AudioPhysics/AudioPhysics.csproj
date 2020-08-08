@@ -82,14 +82,11 @@
     </ApplicationDefinition>
     <Compile Include="Helpers\AnimationLib.cs" />
     <Compile Include="Converters\BoolToIsPlayingIconConverter.cs" />
-    <Compile Include="Converters\BoolToReadyConverter.cs" />
     <Compile Include="Converters\MultiBoolToEnumConverter.cs" />
     <Compile Include="Generator\AudioMixer.cs" />
     <Compile Include="Generator\GeneratorHelpers.cs" />
     <Compile Include="Generator\OscillatorSignalGenerator.cs" />
     <Compile Include="Helpers\GlobalVariables.cs" />
-    <Compile Include="Interfaces\IAnimatable.cs" />
-    <Compile Include="Oscillator\IOscillator.cs" />
     <Compile Include="Oscillator\OscillatorControl.xaml.cs">
       <DependentUpon>OscillatorControl.xaml</DependentUpon>
     </Compile>

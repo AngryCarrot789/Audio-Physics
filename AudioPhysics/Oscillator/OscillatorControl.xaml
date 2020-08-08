@@ -7,8 +7,10 @@
              mc:Ignorable="d" 
              Height="125" d:DesignWidth="500">
     <Grid Background="Transparent">
-        <CheckBox Content="Enabled" IsChecked="{Binding IsEnabled, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="85,0,0,0"/>
-        <Button Command="{Binding RemoveCommand}" Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="126,24,0,0"/>
+        <CheckBox Content="Enabled" IsChecked="{Binding IsEnabled, UpdateSourceTrigger=PropertyChanged}" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="85,0,0,0"
+                  ToolTip="Sets whether this oscillator is enabled"/>
+        <Button Command="{Binding RemoveCommand}" Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="126,24,0,0" ToolTip="Remove this oscillator"/>
 
         <Grid IsEnabled="{Binding IsEnabled, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,5">
             <Grid.ColumnDefinitions>
@@ -75,18 +77,22 @@
                 <Label Content="Wave Offset" VerticalAlignment="Center" Grid.Row="3" Height="26" />
 
                 <Slider Value="{Binding Volume, UpdateSourceTrigger=PropertyChanged}"
+                        ToolTip="Alters the volume from 0.01% to 100% (0.01 because of 'cannot divide by 0' reasons)"
                         Minimum="0.01" Maximum="100" 
                         SmallChange="1" LargeChange="10" TickFrequency="1"
                         Grid.Column="1" VerticalAlignment="Center" Margin="0,4,5,5"/>
                 <Slider Value="{Binding Frequency, UpdateSourceTrigger=PropertyChanged}" 
+                        ToolTip="Alters the frequency, which is how many times the signal goes high and low in 1 second (sort of)"
                         Minimum="2" Maximum="20000" Grid.Column="1" 
                         SmallChange="1" LargeChange="10" TickFrequency="1"
                         VerticalAlignment="Center" Grid.Row="1" Margin="0,5,5,4"/>
-                <Slider Value="{Binding DeTune, UpdateSourceTrigger=PropertyChanged}"
+                <Slider Value="{Binding DeTune, UpdateSourceTrigger=PropertyChanged}" IsEnabled="False" 
+                        ToolTip="Not used/implemented"
                         Minimum="-100" Maximum="100" 
                         SmallChange="1" LargeChange="10" TickFrequency="1"
                         Grid.Column="1" VerticalAlignment="Center" Grid.Row="2" Margin="0,4,5,5"/>
-                <Slider Value="{Binding WaveOffset, UpdateSourceTrigger=PropertyChanged}"
+                <Slider Value="{Binding WaveOffset, UpdateSourceTrigger=PropertyChanged}" 
+                        ToolTip="Offsets the wave between -360 and 360 degrees. Right click for useful offsets"
                         Minimum="-6.283" Maximum="6.283"
                         SmallChange="0.1" LargeChange="1" TickFrequency="0.1"
                         Grid.Column="1" VerticalAlignment="Center" Grid.Row="3" Margin="0,5,5,4">
@@ -107,7 +113,7 @@
 
                 <TextBox Text="{Binding Volume, UpdateSourceTrigger=PropertyChanged}"     Padding="2" VerticalAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Margin="0 0 22 0" FontSize="14" Grid.Row="0"/>
                 <TextBox Text="{Binding Frequency, UpdateSourceTrigger=PropertyChanged}"  Padding="2" VerticalAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Margin="0 0 22 0" FontSize="14" Grid.Row="1"/>
-                <TextBox Text="{Binding DeTune, UpdateSourceTrigger=PropertyChanged}"     Padding="2" VerticalAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Margin="0 0 22 0" FontSize="14" Grid.Row="2"/>
+                <TextBox Text="{Binding DeTune, UpdateSourceTrigger=PropertyChanged}"     IsEnabled="False" Padding="2" VerticalAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Margin="0 0 22 0" FontSize="14" Grid.Row="2"/>
                 <TextBox Text="{Binding WaveOffset, UpdateSourceTrigger=PropertyChanged}" Padding="2" VerticalAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Margin="0 0 22 0" FontSize="14" Grid.Row="3"/>
 
                 <Label Content="%"   VerticalAlignment="Center" HorizontalContentAlignment="Center" Padding="0 5" Grid.Column="2" Margin="0" HorizontalAlignment="Right" Width="22"/>

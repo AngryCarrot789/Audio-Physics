@@ -1,5 +1,4 @@
 ﻿using AudioPhysics.Helpers;
-using AudioPhysics.Interfaces;
 using System.Windows.Controls;
 
 namespace AudioPhysics.Oscillator
@@ -7,7 +6,7 @@ namespace AudioPhysics.Oscillator
     /// <summary>
     /// Interaction logic for OscillatorControl.xaml
     /// </summary>
-    public partial class OscillatorControl : UserControl, IOscillator, IAnimatable
+    public partial class OscillatorControl : UserControl
     {
         public OscillatorViewModel Oscillator
         {
@@ -18,12 +17,18 @@ namespace AudioPhysics.Oscillator
         public OscillatorControl()
         {
             InitializeComponent();
+            Loaded += OscillatorControl_Loaded;
         }
 
-        public void Animate(int viewWidth)
+        private void OscillatorControl_Loaded(object sender, System.Windows.RoutedEventArgs e)
+        {
+            Animate();
+        }
+
+        public void Animate()
         {
             AnimationLib.OpacityControl(this, 0, 1, 0.5);
-            AnimationLib.MoveToTargetX(this, -viewWidth, 0.5);
+            AnimationLib.MoveToTargetX(this, -100, 0.5);
         }
     }
 }
